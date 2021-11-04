@@ -1,0 +1,65 @@
+Script started on Thu Nov  4 10:44:31 2021
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Jjiro.pitkanen@L1729 script-answers % [K[?2004hddocker start -i[15Dexit           [11Ddocker run -it ubuntu bash[26Dexit                      [22Dsdf docker run -it ubuntu bash[26Dnpm i --save-dev @types/react-router-dom[34D[18P[16C                  [18D[16D--save-dev @types/react-router-dom[40Ddocker run -it ubuntu bash              [14D[26Dsdf                       [23Dexitdocker run -it ubuntu bash[26Dexit                      [22Ddocker start -i       container -a  ls  -a[?2004l
+unknown shorthand flag: 'a' in -a
+See 'docker container --help'.
+
+Usage:  docker container COMMAND
+
+Manage containers
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  inspect     Display detailed information on one or more containers
+  kill        Kill one or more running containers
+  logs        Fetch the logs of a container
+  ls          List containers
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  prune       Remove all stopped containers
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  run         Run a command in a new container
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker container COMMAND --help' for more information on a command.
+
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Jjiro.pitkanen@L1729 script-answers % [K[?2004hdocker container -a[1Cl-as-a -a[?2004l
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS                        PORTS     NAMES
+63030c2f4858   ubuntu                 "bash"                   2 minutes ago    Exited (130) 49 seconds ago             confident_yonath
+85db0a03f885   ubuntu                 "bash"                   13 minutes ago   Exited (0) 2 minutes ago                competent_dirac
+a3060cf21552   hello-world            "/hello"                 15 minutes ago   Exited (0) 15 minutes ago               bold_mcclintock
+6b44a48d6409   postgres:10.6-alpine   "docker-entrypoint.s…"   2 weeks ago      Exited (0) 2 weeks ago                  event-postgres
+06eccb614e54   redis:6-alpine         "docker-entrypoint.s…"   2 weeks ago      Exited (0) 2 weeks ago                  event-redis
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Jjiro.pitkanen@L1729 script-answers % [K[?2004hddocker start competent_dirac-competent_dirac[15Dicompetent_dirac[15D competent_dirac[15D[?2004l
+]0;root@85db0a03f885: /root@85db0a03f885:/# [K]0;root@85db0a03f885: /root@85db0a03f885:/# ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib32[0m  [01;36mlibx32[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;36mlib64[0m  [01;34mmedia[0m   [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+]0;root@85db0a03f885: /root@85db0a03f885:/# cd s usr/
+]0;root@85db0a03f885: /usrroot@85db0a03f885:/usr# cd src/
+]0;root@85db0a03f885: /usr/srcroot@85db0a03f885:/usr/src# ls
+[0m[01;34mapp[0m
+]0;root@85db0a03f885: /usr/srcroot@85db0a03f885:/usr/src# cd app/
+]0;root@85db0a03f885: /usr/src/approot@85db0a03f885:/usr/src/app# ls
+index.js
+]0;root@85db0a03f885: /usr/src/approot@85db0a03f885:/usr/src/app# nano index.js 
+[?2004h[?1049h[22;0;0t[1;15r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[13;42H(B[0;7m[ Reading... ](B[m[13;41H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 4.8                                index.js                                           [1;96H(B[m[14d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[15d(B[0;7m^X(B[m Exit[15;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line[13d[2d[39;49m(B[m[?12l[?25h[?25l[1;88H(B[0;7mModified(B[m[2dc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ls[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l.[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25l([?12l[?25h[?25l'[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l w[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ll[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l [13d[K[2;23H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lH[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l w[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l W[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ll[?12l[?25h[?25ld[?12l[?25h[?25l[2;13H(B[0;1m[35m'Hello World'[39m(B[m[?12l[?25h[?25l)[?12l[?25h[?25l[3d[?12l[?25h[?25l[13d(B[0;7mSave modified buffer?                                                                            [14;1H Y(B[m Yes[K[15d(B[0;7m N(B[m No  [15;18H(B[0;7mC(B[m Cancel[K[13;23H[?12l[?25h[?25l[14d(B[0;7m^G(B[m Get Help[14;25H(B[0;7mM-D(B[m DOS Format[14;49H(B[0;7mM-A(B[m Append[14;73H(B[0;7mM-B(B[m Backup File[15d(B[0;7m^C(B[m Cancel[17G        (B[0;7mM-M(B[m Mac Format[15;49H(B[0;7mM-P(B[m Prepend[15;73H(B[0;7m^T(B[m To Files[13d(B[0;7mFile Name to Write: index.js(B[m[13;29H[?12l[?25h[?25l[1;3H(B[0;7m            [1;41HDIR: /usr/src/app/[1;88H        [13d(B[m[K[1;96H[14;17H(B[0;7m^_(B[m Go To Dir    (B[0;7m^W(B[m Where Is[51G(B[0;7mQ(B[m Previous    (B[0;7m^B(B[m Back         (B[0;7m^P(B[m Prev Line[15;2H(B[0;7mX(B[m Close [17G(B[0;7m^L(B[m Refresh      (B[0;7m^Q(B[m Where Was[51G(B[0;7mW(B[m Next        (B[0;7m^F(B[m Forward      (B[0;7m^N(B[m Next Line[13d[1;96H[2d(B[0;7m..         (parent dir)(B[m  .index.js.swp[45G1 KB  index.js[2;70H0  B[1;3H(B[0;7mGNU nano 4.8[1;41H      index.js    [1;88HModified(B[m[2dconsole.log((B[0;1m[35m'Hello World'[39m(B[m)[K[14;17H        (B[0;7mM-D(B[m DOS Format     [51G(B[0;7mA(B[m Append[14X[14;73H(B[0;7mM-B(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[17G        (B[0;7mM-M(B[m Mac Format      [51G(B[0;7mP(B[m Prepend             (B[0;7m^T(B[m To Files[K[13d(B[0;7mFile Name to Write: index.js                                                                     [13;1H(B[m[13;29H[?12l[?25h[?25l[K[14;2H(B[0;7mL(B[m Refresh      (B[0;7m^W(B[m Where Is     (B[0;7mM-Q(B[m Previous    (B[0;7m^P(B[m Prev Line    (B[0;7m^Y(B[m Prev Page    (B[0;7mM-\(B[m First Line[15;2H(B[0;7mX(B[m Close [17G(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[15;49H(B[0;7m^N(B[m Next Line    (B[0;7m^V(B[m Next Page    (B[0;7mM-/(B[m Last Line[13d[1;3H(B[0;7m            [1;40HWrite File Help Text[1;88H        (B[m[2d[39;49m(B[m Type the name that you wish to save the current file as and press [36mEnter[3;2H[39m(B[mto save the file.[5d If you have selected text with the mark, you will be prompted to save[6d only the selected portion to a separate file.  To reduce the chance of[7d overwriting the current file with just a portion of it, the current[8d filename is not the default in this mode.[10d The following function keys are available in Write File mode:[12d[36m^G[39m(B[m     ([36mF1[39m(B[m)[18GDisplay this help text[2d[14;2H(B[0;7mG(B[m Get Help             (B[0;7mM-D(B[m DOS Format          (B[0;7mM-A(B[m Append[14X[14;73H(B[0;7mM-B(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[17G        (B[0;7mM-M(B[m Mac Format  [15;49H(B[0;7mM-P(B[m Prepend             (B[0;7m^T(B[m To Files[K[13d[1;3H(B[0;7mGNU nano 4.8[1;40H       index.js     [1;88HModified(B[m[2d[39;49m(B[mconsole.log((B[0;1m[35m'Hello World'[39m(B[m)[K[3d[K[5d[K[6d[K[7d[K[8d[K[10d[K[12d[K[13d(B[0;7mFile Name to Write: index.js                                                                     [13;1H(B[m[13;29H[?12l[?25h[?25l[13;41H[1K (B[0;7m[ Writing... ](B[m[K[1;88H(B[0;7m        (B[m[13;41H(B[0;7m[ Wrote 2 lines ](B[m[J[15d[?12l[?25h[15;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@85db0a03f885: /usr/src/approot@85db0a03f885:/usr/src/app# cat index.js 
+console.log('Hello World')
+
+]0;root@85db0a03f885: /usr/src/approot@85db0a03f885:/usr/src/app# exit
+exit
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Jjiro.pitkanen@L1729 script-answers % [K[?2004heexit[?2004l
+
+Script done on Thu Nov  4 10:47:46 2021
