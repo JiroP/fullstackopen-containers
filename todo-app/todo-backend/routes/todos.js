@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
 
 router.get('/statistics', async (_, res) => {
   const todosCount = await getAsync("added_todos");
-  res.send({"added_todos": parseInt(todosCount)});
+  res.send({"added_todos": todosCount ? parseInt(todosCount): 0});
 })
 
 const singleRouter = express.Router();
