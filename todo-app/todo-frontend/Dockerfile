@@ -10,4 +10,6 @@ RUN npm install
 ENV REACT_APP_BACKEND_URL=http://localhost:3000
 
 # npm start is the command to start the application in development mode
+RUN CI=true npm test
+
 CMD ["npm", "start"]
